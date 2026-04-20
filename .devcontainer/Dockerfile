@@ -66,3 +66,9 @@ RUN sudo apt-get update && sudo apt-get install -y \
 RUN sudo apt-get update && sudo apt-get install -y \
     ripgrep \
     && sudo rm -rf /var/lib/apt/lists/*
+
+# Install SLAM Toolbox dependencies
+RUN sudo apt-get update && sudo apt-get install -y \
+    ros-humble-slam-toolbox \
+    ros-humble-topic-tools \
+    && sudo rm -rf /var/lib/apt/lists/*
