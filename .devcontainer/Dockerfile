@@ -61,3 +61,8 @@ RUN sudo apt-get update && sudo apt-get install -y \
     liburdfdom-tools \
     python3-jinja2 \
     && sudo rm -rf /var/lib/apt/lists/*
+
+# Install ripgrep for comode searching
+RUN sudo apt-get update && sudo apt-get install -y \
+    ripgrep \
+    && sudo rm -rf /var/lib/apt/lists/*
