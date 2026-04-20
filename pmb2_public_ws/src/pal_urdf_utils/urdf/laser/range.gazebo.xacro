@@ -20,7 +20,7 @@
 
   <xacro:macro name="range_gazebo" params="name ros_topic update_rate maxRange minRange fov radiation">
     <gazebo reference="${name}_link">
-      <sensor name="${name}" type="gpu_lidar">
+      <sensor name="${name}" type="ray">
         <update_rate>${update_rate}</update_rate>
         <topic>${ros_topic}</topic>
         <gz_frame_id>${name}_link</gz_frame_id>
